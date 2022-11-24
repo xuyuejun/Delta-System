@@ -1,6 +1,4 @@
-/** 重置样式 */
-// import './assets/main.css'
-import '@/styles/main.css'
+import '@/styles/global.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

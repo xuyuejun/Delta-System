@@ -1,3 +1,11 @@
 <template>
-  <div>Init Page</div>
+  <AppProvider>
+    <router-view />
+  </AppProvider>
 </template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>

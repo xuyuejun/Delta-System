@@ -15,10 +15,10 @@
             <el-card shadow="hover" style="height: 100%; cursor: pointer"> Test </el-card>
           </el-col>
           <el-col :span="6">
-            <el-card shadow="never" style="height: 100%; cursor: pointer"> Never </el-card>
+            <el-card shadow="never" style="height: 100%"> Never </el-card>
           </el-col>
           <el-col :span="6">
-            <el-card shadow="never" style="height: 100%; cursor: pointer"> Never </el-card>
+            <el-card shadow="never" style="height: 100%"> Never </el-card>
           </el-col>
         </el-row>
       </div>

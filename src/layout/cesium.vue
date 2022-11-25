@@ -1,9 +1,19 @@
 <template>
   <el-container>
-    <el-header style="text-align: right; font-size: 12px"> user </el-header>
+    <el-header style="text-align: left; font-size: 32px">
+      <router-link to="/">
+        <div>Delta System</div>
+      </router-link>
+    </el-header>
     <div class="bodyContainer">
       <el-aside>
-        <el-menu default-active="1" :collapse="true">
+        <el-menu
+          active-text-color="#ffd04b"
+          background-color="#2F343D"
+          text-color="#fff"
+          default-active="1"
+          :collapse="true"
+        >
           <el-menu-item index="1">
             <el-icon>
               <MapLocation />
@@ -52,14 +62,20 @@
 
 export default {
   components: {
+    // eslint-disable-next-line vue/no-unused-components
+    name: 'vue-cesium'
   }
 }
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: white;
+}
 .el-header {
-  background-color: #B3C0D1;
-  color: #333;
+  background-color: #15171B;
+  color: #fff;
   line-height: 60px;
 }
 
@@ -74,6 +90,7 @@ export default {
 
 .el-aside {
   width: 64px;
+  background-color: #2F343D;
 }
 
 .cesium-main {
